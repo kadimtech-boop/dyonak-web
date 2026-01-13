@@ -41,9 +41,14 @@ app.get('/', (req, res) => {
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-    console.log(`\n    🚀 Server running successfully on http://localhost:${PORT}`);
-    console.log(`    🔒 Security Level: High (JWT + Helmet + Bcrypt)`);
-    console.log(`    📝 Database: Async JSON`);
-    console.log(`    🕒 Time: ${new Date().toLocaleTimeString()}\n`);
-});
+// Only listen if run directly (Local Development)
+if (process.env.NODE_ENV !== 'production' || process.env.VITE_API_URL === undefined) {
+    app.listen(PORT, () => {
+        console.log(`\n    🚀 Server running successfully on http://localhost:${PORT}`);
+        console.log(`    🔒 Security Level: High (JWT + Helmet + Bcrypt)`);
+        console.log(`    📝 Database: Async JSON`);
+        console.log(`    🕒 Time: ${new Date().toLocaleTimeString()}\n`);
+    });
+}
+
+export default app;
