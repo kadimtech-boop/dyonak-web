@@ -1,0 +1,58 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "سوبر ماركت الهدى",
+      "phone": "07701234567",
+      "type": "client",
+      "balance": 5000,
+      "createdAt": "2026-01-13T17:26:40.998Z"
+    },
+    {
+      "id": 2,
+      "name": "مطعم البركة",
+      "phone": "07801234567",
+      "type": "supplier",
+      "balance": -2500,
+      "createdAt": "2026-01-13T17:26:40.998Z"
+    }
+  ],
+  "debts": [],
+  "expenses": [
+    {
+      "id": 1,
+      "amount": 400,
+      "category": "إيجار",
+      "note": "إيجار المحل لشهر 3",
+      "date": "2026-01-13T17:26:40.998Z"
+    },
+    {
+      "id": 2,
+      "amount": 200,
+      "category": "نثريات",
+      "note": "شراء قرطاسية",
+      "date": "2026-01-13T17:26:40.998Z"
+    }
+  ],
+  "settings": {
+    "companyName": "متجر ديونك",
+    "currency": "IQD",
+    "notifications": true
+  },
+  "users": [
+    {
+      "id": 1768327777061,
+      "name": "hh",
+      "email": "g@admin",
+      "password": "$2a$10$0GewCb0ZzuUj42tdjuBmjOi4wCxIR14zkKdUCRWvPhOypgDIJYA/C",
+      "createdAt": "2026-01-13T18:09:37.061Z"
+    },
+    {
+      "id": 1768333545770,
+      "name": "kkkk",
+      "email": "hhh@mmmadmin",
+      "password": "$2a$10$qcrmb5ieocRo1y9fdxHPPuiqq0C510y8gFyc05sc5Golw92MU0Jw6",
+      "createdAt": "2026-01-13T19:45:45.770Z"
+    }
+  ]
+}
